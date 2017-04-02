@@ -1,0 +1,245 @@
+body{
+	margin:0;
+	padding:0;
+	width:4323px;
+}
+.container{
+	width:4323px;
+	height: 901px;
+	border:1px solid #000;
+	position: relative;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+}
+.container ul{
+	width:4323px;
+	position: relative;
+	height: 901px;
+}
+.background_a{
+}
+.background_a .background_a_top{
+	width: 1441px;
+	height: 645px;
+	background-image:url(D:/sublime_code/lover/所有图片/background/a_background_top.png);
+}
+.background_a .background_a_middle{
+	width: 1441px;
+	height: 118px;
+	background-image:url(D:/sublime_code/lover/所有图片/background/a_background_middle.png);
+}
+.background_a .background_a_bottom{
+	width: 1441px;
+	height: 138px;
+	background-image:url(D:/sublime_code/lover/所有图片/background/a_background_botton.png);
+}
+.container li{
+	list-style: none;
+	position: relative;
+	display: inline-block;
+	margin-left: -40px;
+	margin-top: -16px;
+}
+.container li:first-child{
+}
+.cloud>div{
+	width: 181px;
+	height: 101px;
+	background-image: url(D:/sublime_code/lover/所有图片/cloud1.png);
+	position: absolute;
+	top: 80px;
+	left: 500px;
+	z-index: 2;
+	animation: cloud1Move 14s infinite linear;
+	-webkit-animation: cloud1Move 14s infinite linear;
+	-moz-animation: cloud1Move 14s infinite linear;
+}
+.cloud div:last-child{
+	width: 150px;
+	height: 70px;
+	background-image: url(D:/sublime_code/lover/所有图片/cloud2.png);
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	left:100px;
+	z-index: 2;
+	animation: cloud2Move 14s infinite linear;
+	-webkit-animation: cloud2Move 14s infinite linear;
+	-moz-animation: cloud2Move 14s infinite linear;
+}
+.sun{
+	width: 201px;
+	height: 201px;
+	background:url(D:/sublime_code/lover/所有图片/sun.png);
+	position: absolute;
+	top:-30px;
+	right: 200px;
+	z-index: 2;
+	animation: sunMove 14s infinite linear;
+	-webkit-animation: sunMove 14s infinite linear;
+	-moz-animation: sunMove 14s infinite linear;
+}
+.charactor{
+	width: 154px;
+	height: 291px;
+	background:url(../images/55ade248000198ae10550582.png)-0px -291px no-repeat;
+	position: absolute;
+	top:413px;
+	left: 0px;
+	z-index: 3;
+}
+.slowWalk{
+	animation: person-slow 950ms infinite steps(1,start);
+	-webkit-animation: person-slow 950ms infinite steps(1,start);
+	-moz-animation: person-slow 950ms infinite steps(1,start);
+}
+.slowFlowerWalk{
+	animation: person-flower-slow 950ms infinite steps(1,start);
+	-webkit-animation: person-flower-slow 950ms infinite steps(1,start);
+	-moz-animation: person-flower-slow 950ms infinite steps(1,start);
+}
+.pauseWalk{
+	animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+}
+@keyframes person-slow{
+	0% {
+       	 	background-position: -0px -291px
+	}
+	25% {
+	       	 background-position: -602px -0px
+	}
+	50% {
+	        	background-position: -302px -291px
+	}
+	75% {
+	        	background-position: -151px -291px
+	}
+	100% {
+	        	background-position: -0px -291px
+	}
+}
+@-moz-keyframes person-slow{
+	0% {
+       	 	background-position: -0px -291px
+	}
+	25% {
+	       	 background-position: -602px -0px
+	}
+	50% {
+	        	background-position: -302px -291px
+	}
+	75% {
+	        	background-position: -151px -291px
+	}
+	100% {
+	        	background-position: -0px -291px
+	}
+}
+@-webkit-keyframes person-slow{
+	0% {
+        		background-position: -0px -291px
+	}
+	25% {
+	        	background-position: -602px -0px
+	}
+	50% {
+	       	 background-position: -302px -291px
+	}
+	75% {
+	        	background-position: -151px -291px
+	}
+	100% {
+	        	background-position: -0px -291px
+	}
+}
+@keyframes person-flower-slow{
+	0% {
+       	 	background-position:  -453px -0px
+	}
+	25% {
+	       	 background-position: -904px -0px
+	}
+	50% {
+	        	background-position: -451px -0px
+	}
+	75% {
+	        	background-position: -753px -0px
+	}
+	100% {
+	        	background-position: -300px -0px
+	}
+}
+@-moz-keyframes person-flower-slow{
+	0% {
+       	 	background-position:  -453px -0px
+	}
+	25% {
+	       	 background-position: -904px -0px
+	}
+	50% {
+	        	background-position: -451px -0px
+	}
+	75% {
+	        	background-position: -753px -0px
+	}
+	100% {
+	        	background-position: -300px -0px
+	}
+}
+@-webkit-keyframes person-flower-slow{
+	0% {
+       	 	background-position:  -453px -0px
+	}
+	25% {
+	       	 background-position: -904px -0px
+	}
+	50% {
+	        	background-position: -451px -0px
+	}
+	75% {
+	        	background-position: -753px -0px
+	}
+	100% {
+	        	background-position: -300px -0px
+	}
+}
+/*cloud1的动画效果*/
+@keyframes cloud1Move{
+	from{left:500px;}
+	to    {left:0px;}
+}
+@-webkit-keyframes cloud1Move{
+	from{left:500px;}
+	to    {left:0px;}
+}
+@-moz-keyframes cloud1Move{
+	from{left:500px;}
+	to    {left:0px;}
+}
+@keyframes cloud2Move{
+	from{left:100px;}
+	to    {left:500px;}
+}
+@-webkit-keyframes cloud2Move{
+	from{left:100px;}
+	to    {left:500px;}
+}
+@-moz-keyframes cloud2Move{
+	from{left:100px;}
+	to    {left:500px;}
+}
+@keyframes sunMove{
+	from{right:200px;}
+	to    {right:700px;}
+}
+@-webkit-keyframes sunMove{
+	from{right:200px;}
+	to    {right:700px;}
+}
+@-moz-keyframes cloud2Move{
+	from{right:200px;}
+	to    {right:700px;}
+}
+
